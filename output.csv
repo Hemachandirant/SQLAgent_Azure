@@ -1,0 +1,2 @@
+ci_name,ci_cat,ci_subcat,wbs,incident_id,status,impact,urgency,priority,number_cnt,category,kb_number,alert_status,no_of_reassignments,open_time,reopen_time,resolved_time,close_time,handle_time_hrs,closure_code,no_of_related_interactions,related_interaction,no_of_related_incidents,no_of_related_changes,related_change
+SUB000508,subapplication,Web Based Application,WBS000162,IM0000004,Closed,4,4,4.0,0.601292279,incident,KM0000553,closed,26.0,5/2/2012 13:32,nan,4/11/2013 13:50,4/11/2013 13:51,"3,87,16,91,111",Other,1.0,SD0000007,2.0,nan,nan
