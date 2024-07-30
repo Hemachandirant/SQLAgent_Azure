@@ -173,7 +173,6 @@ def query_database(request: QueryRequest):
         logger.error(f"Unexpected error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
 
-if __name__ == "__main__":
     
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))
