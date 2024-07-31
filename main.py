@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 import json
 import time
+import fastapi
 from langchain.chains import create_sql_query_chain
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
