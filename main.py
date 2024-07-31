@@ -38,8 +38,12 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-app = FastAPI()
-
+app = fastapi.FastAPI(
+    title="SQLAgent",
+    description="This is CDA SQL Agent",
+    version="0.1.0",
+    openapi_url="/api/v0.1.1/openapi.json",
+)
 # Allow CORS for your frontend origin
 origins = [
     "http://127.0.0.1:5501",
@@ -174,7 +178,5 @@ def query_database(request: QueryRequest):
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
 
     
-
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000))  # Use PORT from environment variable
-    uvicorn.run(app, host="0.0.0.0", port=port) 
+    uvicorn.run(app, host="0.0.0.0", port = 8000, log_level='info')
