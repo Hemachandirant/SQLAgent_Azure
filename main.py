@@ -38,7 +38,7 @@ from langchain_core.prompts import (
 )
 import logging
 
-GOOGLE_API_KEY = "AIzaSyBffyUxh5WK0iA87rPkKYbmyxuyg-XyL-0"
+GOOGLE_API_KEY = "AIzaSyC2ykmE8kwmam1D6Xn60l7XE964CuTKGS8"
 
 
 # Configure logging
